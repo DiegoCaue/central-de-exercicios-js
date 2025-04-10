@@ -1,118 +1,164 @@
-function exemploFor () {
+// function exemploFor () {
 
-    // FOR
-    // 1o = Declarar contador.
-    // 2o = Condição (enquanto).
-    // 3o = Incremento.
-    for (let contador = 1; contador <= 5; contador++) {
+//     // FOR
+//     // 1o = Declarar contador.
+//     // 2o = Condição (enquanto).
+//     // 3o = Incremento.
+//     for (let contador = 1; contador <= 5; contador++) {
     
-        alert(contador);
+//         alert(contador);
     
-    }
+//     }
 
-}
+// }
 
-function exemploWhile () {
+// function exemploWhile () {
 
-    let contador = 1;
+//     let contador = 1;
 
-    while (contador <= 5) {
+//     while (contador <= 5) {
 
-        console.log(contador);
-        contador ++;
+//         console.log(contador);
+//         contador ++;
 
-    }
-
-
-}
-
-function exemploDoWhile () {
-
-    let contador = 1;
-
-    do {
-
-        alert(contador);
-        contador++;
-
-    } while (contador <= 5);
-
-}
-
-exemploDoWhile ()
+//     }
 
 
-function exercicio01 () { 
-    for ( let contador = 1; contador <= 10; contador++ ) {
+// }
+
+// function exemploDoWhile () {
+
+//     let contador = 1;
+
+//     do {
+
+//         alert(contador);
+//         contador++;
+
+//     } while (contador <= 5);
+
+// }
+
+// exemploDoWhile ()
+
+
+// function exercicio01 () { 
+//     for ( let contador = 1; contador <= 10; contador++ ) {
     
-        console.log(contador);
+//         console.log(contador);
     
-    }
+//     }
    
-}
+// }
 
-exercicio01 ()
+// exercicio01 ()
 
-function exercicio02 () {
-
-
-let numero = prompt("Digite um número:");
+// function exercicio02 () {
 
 
-for (let i = 1; i <= 10; i++) {
-    console.log  (`${numero} x ${i} = ${numero * i}`);
-}
+// let numero = prompt("Digite um número:");
 
-}
 
-exercicio02 ()
+// for (let i = 1; i <= 10; i++) {
+//     console.log  (`${numero} x ${i} = ${numero * i}`);
+// }
 
-function exercicio03 () {
+// }
 
-    let N = prompt("Digite um numero N:");
-    let soma = 0;
-    for (let i = 1; i <= N; i++) {
-        soma += i;
-    }
-    console.log(`A soma dos primeiros ${N} números naturais é: ${soma}`);
+// exercicio02 ()
+
+// function exercicio03 () {
+
+//     let N = prompt("Digite um numero N:");
+//     let soma = 0;
+//     for (let i = 1; i <= N; i++) {
+//         soma += i;
+//     }
+//     console.log(`A soma dos primeiros ${N} números naturais é: ${soma}`);
     
 
-}
+// }
 
 
-exercicio03 ()
+// exercicio03 ()
 
-function intermediario01 () {
-    let i = 1;
+// function intermediario01 () {
+//     let i = 1;
 
-    while (i <=50) {
-        if (i % 2 === 0) {
-            console.log(i);
+//     while (i <=50) {
+//         if (i % 2 === 0) {
+//             console.log(i);
 
-        }
-        i++;
-    }
+//         }
+//         i++;
+//     }
 
-}
+// }
   
-intermediario01 ()
+// intermediario01 ()
 
+function intermedirario02 () {
+    let numeroAlertorio = Math.floor(Math.random() * (100 - 1) + 1);
 
-function intermediario03 () {
+    let tentativa;
 
-    let numero = (prompt ("Digite um numero"))
+    while (tentativa != numeroAlertorio) {
 
-    while (numero >=0) { 
-        console.log (numero);
-        numero--;
-    }
+        tentativa = prompt("Insira um numero"); 
+
+        if (numeroAleatorio > tentativa) {
+            
+            alert ("Numero aleatorio e maior.");
+
+        } else if (numeroAlertorio < tentativa) {
+
+            alert("numero aleatorio e menor");
+        } else {
+            alert ("Voce acertou");
+        }
+        
+}
 
 }
 
-intermediario03 ()
+intermedirario02 ()
 
 
+// // function intermediario03 () {
+
+// //     let numero = (prompt ("Digite um numero"))
+
+// //     while (numero >=0) { 
+// //         console.log (numero);
+// //         numero--;
+// //     }
+
+// // }
+
+// // intermediario03 ()
 
 
+// function avancando03 () {
 
+//     // Pede um número ao usuário
+//     let numero = prompt("Digite um número:");
+    
+//     // Converte o número para uma string e inicializa a variável de resultado
+//     let numeroInvertido = "";
+    
+//     // Enquanto o número não for zero
+//     while (numero > 0) {
+//         // Obtém o último dígito do número e o adiciona à variável de resultado
+//         let ultimoDigito = numero % 10;
+//         numeroInvertido += ultimoDigito;
+        
+//         // Remove o último dígito do número
+//         numero = Math.floor(numero / 10);
+//     }
+    
+//     // Exibe o número invertido
+//     alert("Número invertido: " + numeroInvertido);
+// }
+
+// avancando03 ()
 
