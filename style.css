@@ -1,0 +1,25 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oi&display=swap');
+
+
+button {  background-color: darkblue;
+    color: white;
+    border-radius: 10px;
+    width: 20vw;
+    height: 5vh;
+
+    font-family: "Inter"
+}
+
+h1, h2, h3, p { 
+    font-family: "Inter";
+    color: white;
+}
+
+button, h1, h2, h3, p{
+    margin-left: 50px;
+}
+
+body {
+    background-color: black;
+}

@@ -1,36 +1,41 @@
-function exercicio1 () {
+function exerciciocondicionais1 () {
 
 
 let numero = prompt ("Qual sua idade")
 
 if (numero >18 ) { 
-    console.log ("maior de idade")
+    alert ("maior de idade")
 }
 
 else {
     if (numero <18);
-console.log ("menor de idade")
+alert ("menor de idade")
 }
+gerarlog("Exercicios de maioridade executado ás no alert:" + new Date().toLocaleString());
 }
-exercicio1
 
-function exercicio02 () {
+
+
+
+
+
+function exerciciocondicionais2 () {
 
 let numero = prompt("Digite um numero")
 
 if (numero >0) {
 
-    console.log ("Positivo");
+    alert ("Positivo");
 } 
 
 else {
     if (numero <0 )  
-    console.log("negativo");
+    alert("negativo");
 }
 }
-exercicio02
 
-function exercicio03 () {
+
+function exerciciocondicionais03 () {
 let nota = prompt ("Nota do aluno")
 
 if (nota >=60)
@@ -40,9 +45,9 @@ else {
     alert ("Reprovado")
 }
 }
-exercicio03
 
-function exercicio04 () {
+
+function exerciciocondicionais04 () {
 let numero = prompt ("Digite um numero")
  
 if (numero >0)
@@ -54,9 +59,9 @@ if (numero >=0)
 else 
     alert("negativo")
 }
-exercicio04
 
-function exercicio05 () {
+
+function exerciciocondicionais05 () {
 let numero = prompt ("Classificacao de idade")
 
 if (numero <=12)
@@ -69,9 +74,9 @@ if (numero >=13)
 if (numero >=18)
     alert ("adulto")
 }
-exercicio05
 
-function exercicio06 () {
+
+function exerciciocondicionais06 () {
 let numero = prompt ("Digite um numero")
 
 if (numero %2==0)
@@ -80,8 +85,7 @@ if (numero %2==0)
 else 
     alert ("Numero Impar")
 
-exercicio06}
-
+}
 function exercicioIntermediario1 () {
     let num1 = prompt ("Digite primeiro numero")
     let num2 = prompt ("Digite segundo numero")
@@ -100,7 +104,19 @@ function exercicioIntermediario1 () {
     
 }
 
-exercicioIntermediario1 ()
+function gerarlog (textodoLog) {
+
+let logsContainer = document.querySelector(".logs-container");
+
+let paragraph = document.createElement ("p");
+
+paragraph.innerHTML = textodoLog;
+
+logsContainer.appendChild(paragraph);
+
+}
+
+
 
 
 
